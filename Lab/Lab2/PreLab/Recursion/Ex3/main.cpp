@@ -4,10 +4,14 @@ using namespace std;
 
 void printPattern(int n)
 {
-	cout << n << " ";
-    if (n <= 0) return;
+    if (n <= 0)
+    {
+        cout << n;
+        return;
+    }
+    else cout << n << " ";
     printPattern(n - 5);
-    cout << n << " ";
+    cout << " " << n;
 }
 
 int main()
